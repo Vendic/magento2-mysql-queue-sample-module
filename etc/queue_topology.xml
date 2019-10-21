@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="magento-db" type="topic" connection="db">
+        <binding id="updateNewCustomerBinding" topic="new_customer.created" destinationType="queue"
+                 destination="new_customer.created"/>
+    </exchange>
+</config>

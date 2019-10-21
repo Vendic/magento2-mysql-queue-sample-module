@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/queue.xsd">
+    <broker topic="new_customer.created" exchange="magento-db" type="db">
+        <queue name="new_customer_created_queue" consumer="newQueueTest"
+               consumerInstance="Magento\Framework\MessageQueue\Consumer"
+               handler="Vendic\MysqlMqExample\Model\Queue\Consumer::processMessage"/>
+    </broker>
+</config>
