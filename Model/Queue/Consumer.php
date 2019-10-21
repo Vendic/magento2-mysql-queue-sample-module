@@ -25,6 +25,5 @@ class Consumer
     public function processMessage()
     {
         $this->logger->debug('Processed queue message...');
-
     }
 }

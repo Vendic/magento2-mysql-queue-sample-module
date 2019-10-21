@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/consumer.xsd">
-    <consumer name="product_action_attribute.update" queue="new_customer.created" connection="db"
+    <consumer name="new_customer.created" queue="new_customer.created" connection="db"
               consumerInstance="Magento\Framework\MessageQueue\Consumer"
               handler="Vendic\MysqlMqExample\Model\Queue\Consumer::processMessage"/>
 </config>
