@@ -8,3 +8,6 @@
 
 The logs now should display `[2019-10-21 09:39:43] main.DEBUG: Processed queue message... [] []`
 
+### About Vendic
+[Vendic - Magento 2](https://vendic.nl "Vendic Homepage") develops technically challenging e-commerce websites using Magento 2. Feel free to check out our projects on our website.
+
